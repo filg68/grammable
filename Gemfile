@@ -64,6 +64,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # rspec gem for test driven development
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
+  gem 'factory_bot_rails'
 end
 
 # add jquery-rails -  needed for bootstrap gem and for jquery code dev
