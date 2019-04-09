@@ -80,3 +80,6 @@ end
 # time to add simple_form
 gem 'simple_form'
 
+# user security gem installation
+gem 'devise'
+
