@@ -84,3 +84,5 @@ gem 'simple_form'
 # user security gem installation
 gem 'devise'
 
+# simple_form gem
+gem 'simple_form'
