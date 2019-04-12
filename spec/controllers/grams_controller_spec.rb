@@ -1,5 +1,6 @@
 require 'rails_helper'
 
+# destroy
 RSpec.describe GramsController, type: :controller do
   describe "gram#destroy action" do
     it "shouldn't let a user who did not create the gram destroy a gram" do
@@ -33,6 +34,7 @@ RSpec.describe GramsController, type: :controller do
     end
   end
 
+  # update
   describe "grams#update action" do
     it "shouldn't let users who didn't create the gram update it" do
       gram = FactoryBot.create(:gram)
@@ -76,8 +78,9 @@ RSpec.describe GramsController, type: :controller do
 
   end
 
+  # edit
   describe "grams#edit action" do
-    it "shouldn't let users who didn't create the gram update it" do
+    it "shouldn't let users who didn't create the gram edit it" do
       gram = FactoryBot.create(:gram)
       user = FactoryBot.create(:user)
       sign_in user
@@ -107,6 +110,7 @@ RSpec.describe GramsController, type: :controller do
 
   end
 
+  # show
   describe "gram#show action" do
     it "should successfully show the page if the gram is found" do
       gram = FactoryBot.create(:gram)
@@ -137,6 +141,7 @@ RSpec.describe GramsController, type: :controller do
     end
   end
 
+  #create
   describe "grams@create action" do
     it "should successfully create a gram in our database" do
       user = FactoryBot.create(:user)
