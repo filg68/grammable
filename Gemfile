@@ -89,3 +89,9 @@ gem 'simple_form'
 
 # image management gem
 gem 'carrierwave', '~> 1.0'
+
+# environment variable management
+gem 'figaro'
+
+# gem to connect CarrierWave to AWS
+gem "fog-aws"
