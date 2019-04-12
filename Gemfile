@@ -86,3 +86,6 @@ gem 'devise'
 
 # simple_form gem
 gem 'simple_form'
+
+# image management gem
+gem 'carrierwave', '~> 1.0'
