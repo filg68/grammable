@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   # creates [:new, :create, :show, :edit, :update, :destroy]
   resources :grams
 
+  resources :comments, creates [:create]
+
 end
