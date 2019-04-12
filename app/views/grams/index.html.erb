@@ -6,6 +6,14 @@
     <p>
       <%= gram.message %>
     </p>
+
+    <div class="gram-actions float-right">
+      <% if current_user && current_user == gram.user %>
+        <%= link_to 'Edit', edit_gram_path(gram) %>
+      <% end %>
+    </div>
+    <br class="clear-fix" />
+    
   </div>
   <% end %>
 </div>
