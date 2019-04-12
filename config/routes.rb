@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   root "grams#index"
 
   # creates [:new, :create, :show, :edit, :update, :destroy]
-  resources :grams
-
-  resources :comments, creates [:create]
+  resources :grams do
+    resources :comments, only: [:create]
+  end
 
 end
