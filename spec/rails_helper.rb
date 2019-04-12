@@ -62,4 +62,5 @@ RSpec.configure do |config|
   # include devise in rspec tests
   config.include Devise::Test::ControllerHelpers, type: :controller
   config.include Devise::Test::ControllerHelpers, type: :view
+  include ActionDispatch::TestProcess
 end
